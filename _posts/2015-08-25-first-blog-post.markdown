@@ -10,13 +10,13 @@ Additionally, it was a sort of long strange trip just getting Jekyll working. So
 
 ![One does not simply do software](http://cdn.meme.am/instances/500x/64126770.jpg)
 
-Jekyll was kind of a piece of work while trying to get it running. First of all it doesn't seem to run on Windows very well at all. You can't just install Ruby and then `gem install github-pages` and expect to be in business. At least one of the gem packages requires a native build and Windows just doesn't seem to be its thing.
+Jekyll was kind of a piece of work to install. First of all it doesn't seem to run on Windows very well at all. You can't just install Ruby and then `gem install github-pages` and expect to be in business. At least one of the gem packages requires a native build and Windows just doesn't seem to be its thing.
 
 So me being the wise guy I am, I'm thinking I'll start a little minimal Ubuntu VM and run Jekyll off that. Wrong again. I go and `sudo apt-get install ruby ruby-dev` then `gem install github-pages` and come to find out we need Ruby version >1.9. At this point I screw around with RVM for a couple hours and then go to bed pissed.
 
 Today was a new day. I installed Fedora server on a VM which has the appropriate version of Ruby / zlib and whatever else I needed. Then `gem install github-pages` and found out I needed some kind of javascript engine. So I installed npm `gem install github-pages` and we're in business.
 
-Doesn't that all seem a little ridiculous? How many different package distribution channels and wacky error message hoops do I have to jump through to install a static web site generator?!!? 
+Doesn't that all seem a little ridiculous? How many different package distribution channels and wacky error message hoops do I have to jump through to install a static web site generator?!!?
 
 [youtube-dl]:      https://github.com/rg3/youtube-dl
 [aspnet]:   https://github.com/aspnet
